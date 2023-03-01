@@ -77,5 +77,4 @@ be prompted to answer upon going to the website.
 |3/16/24 | Finalize Implementation               |
 |4/04/24 | Finalize Documentaiton                |
 |4/14/24 | Dress Rehearsal                       |
-
-4/19/24 - Present Project
+|4/19/24 | Present Project                       |
