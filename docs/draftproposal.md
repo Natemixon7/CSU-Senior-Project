@@ -8,7 +8,7 @@
 
 ### Project Advisor
 
-#### Dr. Sean Hayes :older_woman::older_man:
+#### Dr. Sean Hayes :older_man:
 
 ### Expected Graduation Date
 
@@ -63,14 +63,19 @@ be prompted to answer upon going to the website.
 
 ### Schedule :calendar: :watch:
 
-3/17/23 - Proposal finalized
+|Date   | Milestone                              |
+|:-----:|:---------------------------------------|
+|3/17/23 | Proposal finalized                    |
+|4/08/23 | Requirements document finalized       |
+|4/10/23 | Proposal and requirements document due|
+|5/30/23 | Web scraping completed                |
+|6/30/23 | Database finalized                    |
+|7/30/23 | Website finalized                     |
+|9/16/23 | Draft Test Plan                       |
+|10/27/23 | Fianlize Test Plan                   |
+|2/16/24 | Finish Testing                        |
+|3/16/24 | Finalize Implementation               |
+|4/04/24 | Finalize Documentaiton                |
+|4/14/24 | Dress Rehearsal                       |
 
-4/08/23 - Requirements document finalized
-
-4/10/23 - Proposal and requirements document due
-
-5/30/23 - Web scraping completed
-
-6/30/23 - Database finalized
-
-7/30/23 - Website finalized
+4/19/24 - Present Project
