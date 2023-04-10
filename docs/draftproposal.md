@@ -1,6 +1,6 @@
 ### Name
 
-#### Nathan Mixon :woman::man:
+#### Nathan Mixon :man:
 
 ### Degree and Major
 
@@ -30,16 +30,16 @@ is crucial to cutting costs for consumers, saving time, and eliminating any comp
  
  This project will consist of a website backed by a database that stores prices for computer parts scraped from the web.
  This database will update every 24 hours using a script so that the website's prices are always up to date. This website will 
- then implement its AI technology to recommend a custom computer and its price to the consumer based on a series of questions. 
- The consumer will then be able to switch out necessary parts to get the best and most affordable computer for them. 
+ then implement its AI technology to recommend a custom computer based on a series of questions answered by the customer. 
+ The consumer will then be able to switch out necessary parts using dropdowns to get the best and most affordable computer for them. 
 
 ### Proposed Implementation Language(s) :octocat:
 
-Python, HTML, CSS, and MySQL
+Python, HTML, PHP, CSS, and MySQL
 
 ### Libraries, Packages, Development Kits, etc. to be used in the proposed implementation languages(s) :wrench:
 
-Beautiful Soup, Apache, and TensorFlow
+Visual Studio Code, Beautiful Soup, Apache, and TensorFlow
 
 ### Additional Software/Equipment Needed :computer::joystick:
 
@@ -70,7 +70,8 @@ be prompted to answer upon going to the website.
 |4/10/23 | Proposal and requirements document due|
 |5/30/23 | Web scraping completed                |
 |6/30/23 | Database finalized                    |
-|7/30/23 | Website finalized                     |
+|7/30/23 | AI aided component finalized          |
+|8/30/23 | Website finalized                     |
 |9/16/23 | Draft Test Plan                       |
 |10/27/23 | Fianlize Test Plan                   |
 |2/16/24 | Finish Testing                        |
