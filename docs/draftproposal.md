@@ -68,13 +68,19 @@ be prompted to answer upon going to the website.
 |3/17/23 | Proposal finalized                    |
 |4/08/23 | Requirements document finalized       |
 |4/10/23 | Proposal and requirements document due|
-|5/30/23 | Web scraping completed                |
-|6/30/23 | Database finalized                    |
-|7/30/23 | AI aided component finalized          |
+|6/30/23 | Database Finalized                    |
 |8/30/23 | Website finalized                     |
+|9/14/23 | Pull Raw Web Data                     |
+|9/21/23 | Pull Specific Tags                    |
+|9/21/23 | Parse and Store Data                  |
+|9/30/23 | Web scraping completed                |
+|9/30/23 | Laravel Task Scheduler                 |
+|10/5/23 | Migrate Laravel/Website               |
 |9/16/23 | Draft Test Plan                       |
-|10/27/23 | Fianlize Test Plan                   |
+|10/25/23 | AI aided component finalized         |
+|10/27/23 | Finalize Test Plan                   |
 |2/16/24 | Finish Testing                        |
+|2/30/24 | Analyze Test Results                  |
 |3/16/24 | Finalize Implementation               |
 |4/04/24 | Finalize Documentaiton                |
 |4/14/24 | Dress Rehearsal                       |
