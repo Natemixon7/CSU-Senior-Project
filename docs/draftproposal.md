@@ -1,6 +1,6 @@
 ### Name
 
-#### Nathan Mixon :woman::man:
+#### Nathan Mixon :man:
 
 ### Degree and Major
 
@@ -8,7 +8,7 @@
 
 ### Project Advisor
 
-#### Dr. Sean Hayes :older_woman::older_man:
+#### Dr. Sean Hayes :older_man:
 
 ### Expected Graduation Date
 
@@ -30,16 +30,16 @@ is crucial to cutting costs for consumers, saving time, and eliminating any comp
  
  This project will consist of a website backed by a database that stores prices for computer parts scraped from the web.
  This database will update every 24 hours using a script so that the website's prices are always up to date. This website will 
- then implement its AI technology to recommend a custom computer and its price to the consumer based on a series of questions. 
- The consumer will then be able to switch out necessary parts to get the best and most affordable computer for them. 
+ then implement its AI technology to recommend a custom computer based on a series of questions answered by the customer. 
+ The consumer will then be able to switch out necessary parts using dropdowns to get the best and most affordable computer for them. 
 
 ### Proposed Implementation Language(s) :octocat:
 
-Python, HTML, CSS, and MySQL
+Python, HTML, PHP, CSS, and MySQL
 
 ### Libraries, Packages, Development Kits, etc. to be used in the proposed implementation languages(s) :wrench:
 
-Beautiful Soup, Apache, and TensorFlow
+Visual Studio Code, Beautiful Soup, Apache, and TensorFlow
 
 ### Additional Software/Equipment Needed :computer::joystick:
 
@@ -63,14 +63,25 @@ be prompted to answer upon going to the website.
 
 ### Schedule :calendar: :watch:
 
-3/17/23 - Proposal finalized
-
-4/08/23 - Requirements document finalized
-
-4/10/23 - Proposal and requirements document due
-
-5/30/23 - Web scraping completed
-
-6/30/23 - Database finalized
-
-7/30/23 - Website finalized
+|Date   | Milestone                              |
+|:-----:|:---------------------------------------|
+|3/17/23 | Proposal finalized                    |
+|4/08/23 | Requirements document finalized       |
+|4/10/23 | Proposal and requirements document due|
+|6/30/23 | Database Finalized                    |
+|8/30/23 | Website finalized                     |
+|9/14/23 | Pull Raw Web Data                     |
+|9/21/23 | Pull Specific Tags                    |
+|9/21/23 | Parse and Store Data                  |
+|9/30/23 | Web scraping completed                |
+|9/30/23 | Laravel Task Scheduler                 |
+|10/5/23 | Migrate Laravel/Website               |
+|9/16/23 | Draft Test Plan                       |
+|10/25/23 | AI aided component finalized         |
+|10/27/23 | Finalize Test Plan                   |
+|2/16/24 | Finish Testing                        |
+|2/30/24 | Analyze Test Results                  |
+|3/16/24 | Finalize Implementation               |
+|4/04/24 | Finalize Documentaiton                |
+|4/14/24 | Dress Rehearsal                       |
+|4/19/24 | Present Project                       |
