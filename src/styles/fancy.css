@@ -1,0 +1,52 @@
+/* CSS for .php files */
+body {
+  background-color: black;
+}
+
+* {
+  color: white;
+}
+
+input[type=submit] {
+  background-color: gray;
+  border: none;
+  padding: 12px 24px;
+}
+
+.select-fancy {
+  position: relative;
+  font-family: Arial;
+}
+  
+.select-fancy select {
+  display: none;
+}
+  
+.select-selected {
+  background-color: rgb(12, 126, 17);
+}
+  
+.select-items div,.select-selected {
+  color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+}
+  
+.select-items {
+  position: absolute;
+  background-color: rgb(12, 126, 17);
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+  
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: gray;
+}
