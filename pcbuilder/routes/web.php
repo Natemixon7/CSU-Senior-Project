@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PcBuilderController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,6 +17,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/pcbuilder', [PcBuilderController::class, 'pcbuilder'])->name('pcbuilder')->middleware('auth');
 
 Auth::routes();
 

@@ -17,7 +17,6 @@
             die("Connection failed: " . $conn->connect_error);
         }
 
-        
         echo "<form action='invoice.php' method='post'>";
 
         $sqlQueries = array("select * from CPUCoolers", "select * from CPUs", "select * from Cases", "select * from GPUs",

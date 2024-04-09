@@ -72,6 +72,7 @@ def main():
             # suspends connection with the database    
             cursor.close()
             conn.close()
+            print("You are disconnected")
     # throws exception when database fails to connect            
     except mysql.connector.Error as err:
         print("Something went wrong: {}".format(err))
