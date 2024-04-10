@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CheckoutController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PcBuilderController;
 
@@ -19,6 +20,8 @@ Route::get('/', function () {
 });
 
 Route::get('/pcbuilder', [PcBuilderController::class, 'pcbuilder'])->name('pcbuilder')->middleware('auth');
+
+Route::post('/checkout', [CheckoutController::class, 'checkout'])->name('checkout')->middleware('auth');
 
 Auth::routes();
 
