@@ -48,7 +48,7 @@ Computer
 ### Personal Motivation :cake:
 
 As someone who loves building computers and has years of experience doing so, this project will allow me to communicate
-and coordinate much more smoother with my clients. This project will allow me to focus more on creating a quality build for my
+and coordinate much smoother with my clients. This project will allow me to focus more on creating a quality build for my
 clients rather than adjusting prices and helping the client find the right computer for them. This project will do all of
 that for me and I can use the time I save to reach even more clients. On top of all that, I will even gain some web scraping
 and AI programming experience.
