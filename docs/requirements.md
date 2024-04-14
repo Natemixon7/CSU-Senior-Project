@@ -20,7 +20,7 @@
 |Description:      | Website shall display up-to-date prices every 24 hours|
 |Rationale:        | Customers must be aware of price per part and total price at all times|
 |Fit Criterion:    | Price per part is updated immediately when a user adjusts any dropdown option|
-|Dependencyies     | 1 and 2                                |
+|Dependencies     | 1 and 2                                |
 
 |Requirement ID: 4 |  Priority: Very High                   |
 |:-----------------|:---------------------------------------|
