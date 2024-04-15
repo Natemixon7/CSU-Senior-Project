@@ -1,5 +1,9 @@
 const totalPrice = document.getElementById("totalPrice");
-var priceText = "Total Price: $";
+const subtotalPrice = document.getElementById("subtotalPrice");
+const taxPrice = document.getElementById("taxPrice");
+var subtotalPriceText = "Subtotal: $";
+var totalPriceText = "Total: $";
+var taxText = "Tax: $";
 
 const CPU = document.getElementById("CPUs");
 CPU.addEventListener("change", function() { 
@@ -50,34 +54,48 @@ SSD.addEventListener("change", function() {
 });
 
 function update() {
-    let cpuPrice = localStorage.getItem("newCPU");
-    let casePrice = localStorage.getItem("newCase");
-    let coolerPrice = localStorage.getItem("newCooler");
-    let gpuPrice = localStorage.getItem("newGPU");
-    let motherboardPrice = localStorage.getItem("newMotherboard");
-    let ramPrice = localStorage.getItem("newRAM");
-    let ssdPrice = localStorage.getItem("newSSD");
-    let psuPrice = localStorage.getItem("newPSU");
+  let cpuPrice = localStorage.getItem("newCPU");
+  let casePrice = localStorage.getItem("newCase");
+  let coolerPrice = localStorage.getItem("newCooler");
+  let gpuPrice = localStorage.getItem("newGPU");
+  let motherboardPrice = localStorage.getItem("newMotherboard");
+  let ramPrice = localStorage.getItem("newRAM");
+  let ssdPrice = localStorage.getItem("newSSD");
+  let psuPrice = localStorage.getItem("newPSU");
 
-    var price = parseFloat(cpuPrice) + parseFloat(casePrice) + parseFloat(coolerPrice)
-    + parseFloat(gpuPrice)+ parseInt(motherboardPrice) + parseInt(ramPrice) + parseInt(ssdPrice) + parseInt(psuPrice);
-    
-    totalPrice.innerHTML = priceText.concat(price);
-}
+  var price = Number(cpuPrice) + Number(casePrice) + Number(coolerPrice)
+    + Number(gpuPrice) + Number(motherboardPrice) + Number(ramPrice) + Number(ssdPrice) + Number(psuPrice);
+  
+  var tax = (price * 0.07);
+  var priceWithTax = (price + tax);
 
-    let cpuPrice = localStorage.getItem("newCPU");
-    let casePrice = localStorage.getItem("newCase");
-    let coolerPrice = localStorage.getItem("newCooler");
-    let gpuPrice = localStorage.getItem("newGPU");
-    let motherboardPrice = localStorage.getItem("newMotherboard");
-    let ramPrice = localStorage.getItem("newRAM");
-    let ssdPrice = localStorage.getItem("newSSD");
-    let psuPrice = localStorage.getItem("newPSU");
+  var subPrint = subtotalPriceText.concat(price.toFixed(2));
+  var taxPrint = taxText.concat(tax.toFixed(2));
+  var totalPrint = totalPriceText.concat(priceWithTax.toFixed(2));
 
-    var price = parseFloat(cpuPrice) + parseFloat(casePrice) + parseFloat(coolerPrice)
-    + parseFloat(gpuPrice)+ parseInt(motherboardPrice) + parseInt(ramPrice) + parseInt(ssdPrice) + parseInt(psuPrice);
-    
-    totalPrice.innerHTML = priceText.concat(price);
+  subtotalPrice.textContent = subPrint;
+  taxPrice.textContent = taxPrint;
+  totalPrice.textContent = totalPrint;
+  }
+
+let cpuPrice = localStorage.getItem("newCPU");
+let casePrice = localStorage.getItem("newCase");
+let coolerPrice = localStorage.getItem("newCooler");
+let gpuPrice = localStorage.getItem("newGPU");
+let motherboardPrice = localStorage.getItem("newMotherboard");
+let ramPrice = localStorage.getItem("newRAM");
+let ssdPrice = localStorage.getItem("newSSD");
+let psuPrice = localStorage.getItem("newPSU");
+
+var price = Number(cpuPrice) + Number(casePrice) + Number(coolerPrice)
+  + Number(gpuPrice) + Number(motherboardPrice) + Number(ramPrice) + Number(ssdPrice) + Number(psuPrice);
+
+var tax = (price * 0.07);
+var priceWithTax = price + tax;
+
+subtotalPrice.textContent = subtotalPriceText.concat(price.toFixed(2));
+taxPrice.textContent = taxText.concat(tax.toFixed(2));
+totalPrice.textContent = totalPriceText.concat(priceWithTax.toFixed(2));
 
 
 

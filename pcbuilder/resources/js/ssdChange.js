@@ -1,7 +1,9 @@
 const SSD = document.getElementById("SSDs");
 const SSDprice = document.getElementById("SSDprice");
-SSD.addEventListener("change", function() { 
+SSD.addEventListener("change", function() {
+  var SSDtext = SSD.options[SSD.selectedIndex].text;
   localStorage.setItem("newSSD", this.value);
+  localStorage.setItem("SSDtext", SSDtext);
 });
 
 let newSSD = localStorage.getItem("newSSD");
@@ -14,6 +16,5 @@ document.getElementById("SSDs").onchange = priceChange;
 
 if (newSSD) {
   SSD.value = newSSD;
-  SSDprice.innerHTML = newSSD;
 }
 SSD.onchange();

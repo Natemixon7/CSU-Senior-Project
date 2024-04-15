@@ -4,20 +4,16 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>Crowd Control</title>
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
         @vite('resources/css/app.css')
-        <!-- Styles -->
-        <style>
-            
-        </style>
     </head>
     <body class="antialiased bg-green-500">
         <div class="items-center justify-center flex mt-4">
-            <img src="/images/PcBuildBackground.jpg" class="h-screen" alt="">
+            <img src="/images/PcBuildBackground.jpg" class="h-1/12 w-5/12" alt="">
             <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white bg-opacity-95 p-4 rounded hover:bg-green-500 hover:text-white">
                 <a href="{{ route('pcbuilder') }}" class="">{{ __('Customize Your PC') }}</a>
             </div>

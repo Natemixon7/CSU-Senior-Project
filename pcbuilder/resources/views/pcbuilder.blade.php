@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crowd Control</title>
+    <link rel="preconnect" href="https://fonts.bunny.net">
+    <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
     @vite('resources/css/app.css')
     @vite('resources/js/coolerChange.js')
-    @vite('resources/js/cpuChange.js')
     @vite('resources/js/cpuChange.js')
     @vite('resources/js/caseChange.js')
     @vite('resources/js/gpuChange.js')
@@ -45,7 +46,7 @@
 </div>
 
 <div class="pt-10 flex justify-center">
-    <div class="w-4/12 bg-black p-6 rounded-lg">
+    <div class="w-6/12 bg-black p-6 rounded-lg">
     <form method="POST" action="{{ route('checkout') }}">
     @csrf
         <div class="text-white text-2xl text-center p-4">Choose Your Parts</div>
@@ -129,6 +130,8 @@
             <div id="SSDprice" class="text-white"></div>
         </div>
         <br>
+        <div id="subtotalPrice" class="text-white"></div>
+        <div id="taxPrice" class="text-white"></div>
         <div id="totalPrice" class="text-white"></div>
         <br>
         <button type="submit" class="btn btn-primary bg-green-500 rounded-lg p-2 text-center text-lg resize w-full">Submit</button>

@@ -12,24 +12,22 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
-
-    <!-- Scripts -->
     
     @vite('resources/css/app.css')
 </head>
 <body class="bg-green-500">
     <div class="relative sm:flex sm:justify-center sm:items-center bg-center selection:bg-red-500 selection:text-white">
         <div class="sm:fixed sm:top-0 sm:right-0 p-6 text-right z-10">
-            <a href="{{ url('/home') }}" class="font-semibold text-black-600 hover:text-white">
+            <a href="{{ url('/home') }}" class="font-semibold text-black-600 hover:text-white ml-4">
                 {{ __('Home') }}
             </a>
             @guest
                 @if (Route::has('login'))
-                    <a class="font-semibold text-black-600 hover:text-white" href="{{ route('login') }}">{{ __('Login') }}</a>
+                    <a class="font-semibold text-black-600 hover:text-white ml-4" href="{{ route('login') }}">{{ __('Login') }}</a>
                 @endif
 
                 @if (Route::has('register'))
-                    <a class="font-semibold text-black-600 hover:text-white" href="{{ route('register') }}">{{ __('Register') }}</a>
+                    <a class="font-semibold text-black-600 hover:text-white ml-4" href="{{ route('register') }}">{{ __('Register') }}</a>
                 @endif
 
                 @else

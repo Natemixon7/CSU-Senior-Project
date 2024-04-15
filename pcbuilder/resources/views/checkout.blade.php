@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Crowd Control</title>
+    <link rel="preconnect" href="https://fonts.bunny.net">
+    <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
     @vite('resources/css/app.css')
     @vite('resources/js/checkout.js')
 </head>
@@ -38,37 +40,46 @@
 
 
     <div class="pt-10 flex justify-center">
-        <div class="w-4/12 bg-black p-6 rounded-lg">
-            <div class="text-white text-center txt-2xl">
-                Your Order has been placed!
+        <div class="w-6/12 bg-black p-6 rounded-lg">
+            <div class="text-white text-center text-2xl">
+                Thank You,
             </div>
-            <div class="text-white txt-xl">Subtotal: </div> <br>
-            <div class="text-white" id="cpuName"></div>
-            <div class="text-white">
-                - ${{$formData['CPUCoolers']}}
-            </div>
-            <div class="text-white">
-                - ${{$formData['CPUs']}}
-            </div>
-            <div class="text-white">
-            - ${{$formData['Cases']}}
-            </div>
-            <div class="text-white">
-            - ${{$formData['GPUs']}}
-            </div>
-            <div class="text-white">
-            - ${{$formData['Motherboards']}}
-            </div>
-            <div class="text-white">
-            - ${{$formData['PSUs']}}
-            </div>
-            <div class="text-white">
-            - ${{$formData['RAM']}}
-            </div>
-            <div class="text-white">
-            - ${{$formData['SSDs']}}
+            <div class="text-white text-center text-2xl">
+                Your Order Has Been Placed!
             </div> <br>
-            <div class="text-white" id="totalPrice">
+            <p class="text-white font-medium text-center text-xl rounded-lg bg-green-500">CPU Cooler:</p>
+            <div class="text-white" id="Coolertext"></div>
+            <p class="text-white text-lg">&emsp; - ${{$formData['CPUCoolers']}}</p> <br>
+
+            <p class="text-white font-medium text-center text-xl rounded-lg bg-green-500">CPU:</p>
+            <div class="text-white" id="CPUtext"> </div>
+            <p class="text-white text-lg">&emsp; - ${{$formData['CPUs']}}</p> <br>
+
+            <p class="text-white font-medium text-center text-xl rounded-lg bg-green-500">Case:</p>
+            <div class="text-white" id="Casetext"> </div>
+            <p class="text-white text-lg">&emsp; - ${{$formData['Cases']}}</p> <br>
+
+            <p class="text-white font-medium text-center text-xl rounded-lg bg-green-500">GPU:</p>
+            <div class="text-white" id="GPUtext"> </div>
+            <p class="text-white text-lg">&emsp; - ${{$formData['GPUs']}}</p> <br>
+
+            <p class="text-white font-medium text-center text-xl rounded-lg bg-green-500">Motherboard:</p>
+            <div class="text-white" id="Motherboardtext"> </div>
+            <p class="text-white text-lg">&emsp; - ${{$formData['Motherboards']}}</p> <br>
+
+            <p class="text-white font-medium text-center text-xl rounded-lg bg-green-500">PSU:</p>
+            <div class="text-white" id="PSUtext"> </div>
+            <p class="text-white text-lg">&emsp; - ${{$formData['PSUs']}}</p> <br>
+
+            <p class="text-white font-medium text-center text-xl rounded-lg bg-green-500">RAM:</p>
+            <div class="text-white" id="RAMtext"> </div>
+            <p class="text-white text-lg">&emsp; - ${{$formData['RAM']}}</p> <br>
+
+            <p class="text-white font-medium text-center text-xl rounded-lg bg-green-500">SSD:</p>
+            <div class="text-white" id="SSDtext"> </div>
+            <p class="text-white text-lg">&emsp; - ${{$formData['SSDs']}}</p> <br>
+
+            <div class="text-white font-medium text-xl" id="totalPrice">
                 Total:
             </div>
         </div>

@@ -1,7 +1,9 @@
 const Motherboard = document.getElementById("Motherboards");
 const Motherboardprice = document.getElementById("Motherboardprice");
-Motherboard.addEventListener("change", function() { 
+Motherboard.addEventListener("change", function() {
+  var Motherboardtext = Motherboard.options[Motherboard.selectedIndex].text;
   localStorage.setItem("newMotherboard", this.value);
+  localStorage.setItem("Motherboardtext", Motherboardtext);
 }); 
 
 let newMotherboard = localStorage.getItem("newMotherboard");
@@ -14,6 +16,5 @@ document.getElementById("Motherboards").onchange = priceChange;
 
 if (newMotherboard) {
   Motherboard.value = newMotherboard;
-  Motherboardprice.innerHTML = newMotherboard;
 }
 Motherboard.onchange();

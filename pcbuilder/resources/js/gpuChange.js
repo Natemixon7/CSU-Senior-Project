@@ -1,7 +1,9 @@
 const GPU = document.getElementById("GPUs");
 const GPUprice = document.getElementById("GPUprice");
-GPU.addEventListener("change", function() { 
+GPU.addEventListener("change", function() {
+  var GPUtext = GPU.options[GPU.selectedIndex].text;
   localStorage.setItem("newGPU", this.value);
+  localStorage.setItem("GPUtext", GPUtext);
 }); 
 
 let newGPU = localStorage.getItem("newGPU");
@@ -14,6 +16,5 @@ document.getElementById("GPUs").onchange = priceChange;
 
 if (newGPU) {
   GPU.value = newGPU;
-  GPUprice.innerHTML = newGPU;
 }
 GPU.onchange();

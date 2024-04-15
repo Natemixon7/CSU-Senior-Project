@@ -1,7 +1,9 @@
 const RAM = document.getElementById("RAM");
 const RAMprice = document.getElementById("RAMprice");
-RAM.addEventListener("change", function() { 
+RAM.addEventListener("change", function() {
+  var RAMtext = RAM.options[RAM.selectedIndex].text;
   localStorage.setItem("newRAM", this.value);
+  localStorage.setItem("RAMtext", RAMtext);
 }); 
 
 let newRAM = localStorage.getItem("newRAM");
@@ -14,6 +16,5 @@ document.getElementById("RAM").onchange = priceChange;
 
 if (newRAM) {
   RAM.value = newRAM;
-  RAMprice.innerHTML = newRAM;
 }
 RAM.onchange();
