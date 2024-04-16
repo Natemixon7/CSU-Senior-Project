@@ -1,9 +1,9 @@
 const CPU = document.getElementById("CPUs");
 const CPUprice = document.getElementById("CPUprice");
 CPU.addEventListener("change", function() {
+  var CPUtext = CPU.options[CPU.selectedIndex].text;
   localStorage.setItem("newCPU", this.value);
   localStorage.setItem("CPUtext", CPUtext);
-  var CPUtext = CPU.options[CPU.selectedIndex].text;
 });
 
 let newCPU = localStorage.getItem("newCPU");

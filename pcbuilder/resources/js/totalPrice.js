@@ -67,7 +67,7 @@ function update() {
     + Number(gpuPrice) + Number(motherboardPrice) + Number(ramPrice) + Number(ssdPrice) + Number(psuPrice);
   
   var tax = (price * 0.07);
-  var priceWithTax = (price + tax);
+  var priceWithTax = (price + tax) + 125;
 
   var subPrint = subtotalPriceText.concat(price.toFixed(2));
   var taxPrint = taxText.concat(tax.toFixed(2));
@@ -91,7 +91,7 @@ var price = Number(cpuPrice) + Number(casePrice) + Number(coolerPrice)
   + Number(gpuPrice) + Number(motherboardPrice) + Number(ramPrice) + Number(ssdPrice) + Number(psuPrice);
 
 var tax = (price * 0.07);
-var priceWithTax = price + tax;
+var priceWithTax = price + tax + 125;
 
 subtotalPrice.textContent = subtotalPriceText.concat(price.toFixed(2));
 taxPrice.textContent = taxText.concat(tax.toFixed(2));

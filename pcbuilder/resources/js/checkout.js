@@ -39,7 +39,7 @@ let newPSUtext = localStorage.getItem("RAMtext");
 var price = Number(cpuPrice) + Number(casePrice) + Number(coolerPrice)
 + Number(gpuPrice) + Number(motherboardPrice) + Number(ramPrice) + Number(ssdPrice) + Number(psuPrice);
 
-var priceWithTax = (price + (price * 0.07));
+var priceWithTax = (price + (price * 0.07)) + 125;
 
 totalPrice.innerHTML = priceText.concat(priceWithTax.toFixed(2));
 

@@ -132,6 +132,7 @@
         <br>
         <div id="subtotalPrice" class="text-white"></div>
         <div id="taxPrice" class="text-white"></div>
+        <div class="text-white">Build Fee: $125</div>
         <div id="totalPrice" class="text-white"></div>
         <br>
         <button type="submit" class="btn btn-primary bg-green-500 rounded-lg p-2 text-center text-lg resize w-full">Submit</button>
