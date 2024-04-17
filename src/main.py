@@ -76,7 +76,7 @@ def main():
                 # pulls all the items off of amazon and stores them into an array
                 arrParts = runPages(url[listIter], arrParts)
                 #inserts the first 5 items in the array into the database
-                while iter2 < 10: #len(arrParts): #and iter < len(arrParts) - 1: 
+                while iter2 < 25: #len(arrParts): #and iter < len(arrParts) - 1: 
                     val = (arrParts[iter2], arrParts[iter2 + 1])
                     cursor.execute(sqlInsert[listIter], val)
                     conn.commit()
