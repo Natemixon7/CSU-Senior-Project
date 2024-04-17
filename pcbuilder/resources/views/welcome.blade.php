@@ -40,7 +40,6 @@
                     <a href="https://unsplash.com/photos/black-and-green-audio-mixer-YYMVV-qMD6Q?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" 
                         class="hover:text-white">Unsplash</a>
         </div>
-
     </div>  
 </body>   
         
